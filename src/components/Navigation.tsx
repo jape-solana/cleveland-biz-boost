@@ -37,8 +37,15 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">CA</span>
+            <div className="w-8 h-8">
+              <dotlottie-player
+                src="https://lottie.host/7edb2e85-38de-4b9f-bd8e-a641bee08c60/QWaiztbk5l.lottie"
+                background="transparent"
+                speed="1"
+                style={{ width: '32px', height: '32px' }}
+                loop
+                autoplay
+              />
             </div>
             <span className="text-xl font-bold text-foreground">CLE Automate</span>
           </div>

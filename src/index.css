@@ -19,19 +19,19 @@
     --popover-foreground: 222 47% 11%;
 
     /* Primary colors - Main brand color */
-    --primary: 221 83% 53%;
+    --primary: 199 100% 48%;
     --primary-foreground: 210 40% 98%;
 
     /* Secondary colors - Supporting color */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 199 100% 96%;
+    --secondary-foreground: 199 100% 48%;
 
     /* Muted colors - For subtle elements */
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 199 100% 96%;
+    --muted-foreground: 199 100% 48%;
 
     /* Accent colors - For highlights */
-    --accent: 221 83% 53%;
+    --accent: 199 100% 48%;
     --accent-foreground: 210 40% 98%;
 
     /* Destructive colors - For errors/warnings */
@@ -39,9 +39,9 @@
     --destructive-foreground: 210 40% 98%;
 
     /* Border and input colors */
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 221 83% 53%;
+    --border: 199 100% 90%;
+    --input: 199 100% 90%;
+    --ring: 199 100% 48%;
 
     /* Border radius */
     --radius: 0.5rem;
@@ -49,12 +49,12 @@
     /* Sidebar colors */
     --sidebar-background: 210 40% 98%;
     --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary: 199 100% 48%;
     --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 221 83% 53%;
+    --sidebar-accent: 199 100% 96%;
+    --sidebar-accent-foreground: 199 100% 48%;
+    --sidebar-border: 199 100% 90%;
+    --sidebar-ring: 199 100% 48%;
   }
 
   .dark {
@@ -71,19 +71,19 @@
     --popover-foreground: 210 40% 98%;
 
     /* Primary colors - Main brand color */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 199 100% 48%;
+    --primary-foreground: 210 40% 98%;
 
     /* Secondary colors - Supporting color */
-    --secondary: 217 33% 18%;
+    --secondary: 199 100% 20%;
     --secondary-foreground: 210 40% 98%;
 
     /* Muted colors - For subtle elements */
-    --muted: 217 33% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 199 100% 20%;
+    --muted-foreground: 199 100% 80%;
 
     /* Accent colors - For highlights */
-    --accent: 217 91% 60%;
+    --accent: 199 100% 48%;
     --accent-foreground: 210 40% 98%;
 
     /* Destructive colors - For errors/warnings */
@@ -91,19 +91,19 @@
     --destructive-foreground: 210 40% 98%;
 
     /* Border and input colors */
-    --border: 217 33% 18%;
-    --input: 217 33% 18%;
-    --ring: 217 91% 60%;
+    --border: 199 100% 20%;
+    --input: 199 100% 20%;
+    --ring: 199 100% 48%;
 
     /* Sidebar colors */
     --sidebar-background: 222 47% 11%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217 91% 60%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 217 33% 18%;
+    --sidebar-primary: 199 100% 48%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 199 100% 20%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 18%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-border: 199 100% 20%;
+    --sidebar-ring: 199 100% 48%;
   }
 }
 
