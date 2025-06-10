@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,47 +38,39 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Cleveland-inspired colors */
+    --cle-wine: 0 45% 25%;
+    --cle-wine-light: 0 35% 35%;
+    --cle-gold: 45 85% 50%;
+    --cle-gold-light: 45 75% 60%;
+    --cle-cream: 45 50% 95%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -100,4 +93,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .bg-cle-wine { background-color: hsl(var(--cle-wine)); }
+  .bg-cle-wine-light { background-color: hsl(var(--cle-wine-light)); }
+  .bg-cle-gold { background-color: hsl(var(--cle-gold)); }
+  .bg-cle-gold-light { background-color: hsl(var(--cle-gold-light)); }
+  .bg-cle-cream { background-color: hsl(var(--cle-cream)); }
+  .text-cle-wine { color: hsl(var(--cle-wine)); }
+  .text-cle-wine-light { color: hsl(var(--cle-wine-light)); }
+  .text-cle-gold { color: hsl(var(--cle-gold)); }
+  .text-cle-gold-light { color: hsl(var(--cle-gold-light)); }
+  .border-cle-gold { border-color: hsl(var(--cle-gold)); }
 }

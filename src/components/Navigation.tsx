@@ -9,7 +9,7 @@ const Navigation = () => {
   const navItems = [
     { name: "How It Works", href: "#how-it-works" },
     { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
+    { name: "Testimonials", href: "#testimonials" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -17,11 +17,14 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-blue-600 to-orange-600 rounded-lg">
-              <Zap className="h-6 w-6 text-white" />
+          <div className="flex items-center space-x-3">
+            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-cle-wine to-cle-wine-light rounded-lg shadow-md">
+              <Zap className="h-6 w-6 text-cle-gold" />
             </div>
-            <span className="text-xl font-bold text-gray-900">Cleveland Automation</span>
+            <div>
+              <span className="text-xl font-bold text-cle-wine">CLE Automate</span>
+              <div className="text-xs text-gray-600 -mt-1">Cleveland Business Automation</div>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -30,12 +33,12 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-cle-wine transition-colors font-medium"
               >
                 {item.name}
               </a>
             ))}
-            <Button className="bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 text-white">
+            <Button className="bg-gradient-to-r from-cle-wine to-cle-wine-light hover:from-cle-wine-light hover:to-cle-wine text-cle-gold font-semibold">
               Get Started
             </Button>
           </div>
@@ -60,14 +63,14 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                  className="block px-3 py-2 text-gray-700 hover:text-cle-wine transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 text-white">
+                <Button className="w-full bg-gradient-to-r from-cle-wine to-cle-wine-light hover:from-cle-wine-light hover:to-cle-wine text-cle-gold font-semibold">
                   Get Started
                 </Button>
               </div>
