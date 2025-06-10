@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +45,7 @@ const Contact = () => {
       } else {
         toast({
           title: "Message Sent!",
-          description: "I'll get back to you within 24 hours with your free automation plan.",
+          description: "We'll get back to you within 24 hours with your free automation plan.",
         });
         setFormData({ name: "", business: "", phone: "", email: "", message: "" });
       }
@@ -85,7 +84,7 @@ const Contact = () => {
             Ready to Stop Losing Money?
           </h2>
           <p className="text-xl text-red-100 max-w-3xl mx-auto">
-            Get your free automation plan. I'll show you exactly how much money you're leaving on the table.
+            Get your free automation plan. We'll show you exactly how much money you're leaving on the table.
           </p>
         </div>
 
@@ -96,7 +95,7 @@ const Contact = () => {
                 Get Your Free Automation Plan
               </CardTitle>
               <CardDescription className="text-gray-600">
-                Tell me about your business and I'll create a custom automation strategy for you.
+                Tell us about your business and we'll create a custom automation strategy for you.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -191,8 +190,8 @@ const Contact = () => {
                 Let's Talk Business
               </h3>
               <p className="text-red-100 text-lg leading-relaxed mb-8">
-                I'm a Cleveland local who understands how hard it is to run a business here. 
-                I've helped dozens of local businesses automate their workflows and increase their profits.
+                We're Cleveland locals who understand how hard it is to run a business here. 
+                We've helped dozens of local businesses automate their workflows and increase their profits.
               </p>
             </div>
 
@@ -239,7 +238,7 @@ const Contact = () => {
               <ul className="space-y-2 text-red-100">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
-                  I'll call you within 24 hours
+                  We'll call you within 24 hours
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
@@ -247,7 +246,7 @@ const Contact = () => {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
-                  I'll create a custom automation plan
+                  We'll create a custom automation plan
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>

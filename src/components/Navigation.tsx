@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
@@ -33,34 +32,34 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
+      isScrolled ? "bg-background shadow-lg" : "bg-background/95 backdrop-blur-sm"
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-red-700 to-yellow-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">CA</span>
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-sm">CA</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">CLE Automate</span>
+            <span className="text-xl font-bold text-foreground">CLE Automate</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection("how-it-works")}
-              className="text-gray-700 hover:text-red-700 transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               How It Works
             </button>
             <button 
               onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-red-700 transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection("testimonials")}
-              className="text-gray-700 hover:text-red-700 transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               Reviews
             </button>
@@ -71,7 +70,7 @@ const Navigation = () => {
                 onClick={handlePhoneCall}
                 variant="outline"
                 size="sm"
-                className="border-red-700 text-red-700 hover:bg-red-700 hover:text-white"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
                 <Phone className="h-4 w-4 mr-2" />
                 Call
@@ -80,7 +79,7 @@ const Navigation = () => {
                 onClick={handleEmailClick}
                 variant="outline"
                 size="sm"
-                className="border-yellow-600 text-yellow-700 hover:bg-yellow-600 hover:text-white"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               >
                 <Mail className="h-4 w-4 mr-2" />
                 Email
@@ -89,7 +88,7 @@ const Navigation = () => {
 
             <Button 
               onClick={() => scrollToSection("contact")}
-              className="bg-gradient-to-r from-red-700 to-yellow-600 hover:from-red-800 hover:to-yellow-700 text-white"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Get Free Plan
             </Button>
@@ -99,7 +98,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-red-700 transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -108,23 +107,23 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden border-t border-gray-200">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
+          <div className="md:hidden border-t border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background">
               <button 
                 onClick={() => scrollToSection("how-it-works")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-red-700 transition-colors"
+                className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 How It Works
               </button>
               <button 
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-red-700 transition-colors"
+                className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-red-700 transition-colors"
+                className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 Reviews
               </button>
@@ -135,7 +134,7 @@ const Navigation = () => {
                   onClick={handlePhoneCall}
                   variant="outline"
                   size="sm"
-                  className="w-full border-red-700 text-red-700 hover:bg-red-700 hover:text-white"
+                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
                   <Phone className="h-4 w-4 mr-2" />
                   Call (216) 555-2886
@@ -144,7 +143,7 @@ const Navigation = () => {
                   onClick={handleEmailClick}
                   variant="outline"
                   size="sm"
-                  className="w-full border-yellow-600 text-yellow-700 hover:bg-yellow-600 hover:text-white"
+                  className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                 >
                   <Mail className="h-4 w-4 mr-2" />
                   cleautomate@gmail.com
@@ -154,7 +153,7 @@ const Navigation = () => {
               <div className="px-3 py-2">
                 <Button 
                   onClick={() => scrollToSection("contact")}
-                  className="w-full bg-gradient-to-r from-red-700 to-yellow-600 hover:from-red-800 hover:to-yellow-700 text-white"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
                   Get Free Plan
                 </Button>
